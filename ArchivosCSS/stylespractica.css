@@ -46,11 +46,13 @@ em {
     color: orange;
 }
 
-div{
+#imagen{
 
-text-align: center;
-   
+    text-align: center;
+
 }
-#centrado{
-text-align: center;
+
+
+#centrado {
+    text-align: center;
 }
