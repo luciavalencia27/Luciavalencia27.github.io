@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(151, 151, 151);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: blue;
+
+}
+
+p {
+    text-align: justify;
+    background-color: white;
+}
+
+#imagen {
+
+    text-align: center;
+    background-color: rgb(151, 151, 151);
+}
+
+img {
+
+    width: 500px;
+}
+
+div {
+
+    background-color: white;
+}
+
+#creditos {
+    text-align: center;
+    color: white;
+    background-color: blue;
+    
+}
+a{
+    color: yellow;
+}
