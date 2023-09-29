@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 200, 210, 0.396);
+}
+.DatosContacto{
+    background-color: pink;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+
+}
+.imagen{
+    width: 200px;
+    border-radius: 50%;
+   
+}
+h1, h2{
+ font-size: 50px;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
