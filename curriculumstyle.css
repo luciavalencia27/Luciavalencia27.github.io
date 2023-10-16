@@ -61,12 +61,10 @@ table {
     border-spacing: 5px;
 }
 
-.Tabla { 
+.Tabla {
+    flex-direction: column;
     align-items: center;
     width: 100%;
-  display: flex;  
-  flex-direction: column;
-   
 }
 
 table,
