@@ -5,8 +5,8 @@ body {
 }
 
 .fondo {
+    display: flex; flex-direction: column;
     background-color: pink;
-    padding-left: 30px;
     padding-right: 30px;
     padding-left: 30px;
     padding-top: 30px;
@@ -37,6 +37,7 @@ h2 {
 }
 
 .contenedor {
+   
     display: flex;
     align-items: center;
 }
@@ -60,6 +61,7 @@ table {
 }
 
 .Tabla {
+    align-items: center;
     width: 100%;
 }
 
