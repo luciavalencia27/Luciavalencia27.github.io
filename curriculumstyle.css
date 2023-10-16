@@ -62,7 +62,7 @@ table {
 }
 
 .Tabla { 
-    align-items: center;
+  
     width: 100%;
     display: flex;
     overflow-x: auto;
