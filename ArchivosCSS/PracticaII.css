@@ -1,0 +1,111 @@
+body {
+    background-color: rgba(152, 152, 152, 0.538);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.Cuerpo {
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.imagenUni {
+
+    clear: both;
+}
+
+img {
+    width: 80px;
+}
+
+table {
+
+    width: 100%;
+  
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    border: 1px solid black;
+
+
+}
+
+td {
+    border: 1px solid orange;
+}
+
+h2 {
+    text-align: center;
+}
+
+.p2 ,
+.p3,
+.p4,
+.p5 {
+    text-align: center;
+}
+
+.sangria {
+    margin-left: 5%;
+}
+
+.Tabla {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    flex-direction: column;
+    padding: 30px;
+
+}
+
+th {
+    background-color: yellow;
+}
+
+.float {
+    float: right;
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(255, 68, 0, 0.13);
+}
+
+table tr:nth-child(odd) {
+    background-color: white;
+
+}
+
+.espacio{
+    margin-bottom: 110px;
+}
+
+.p8{
+    margin-left: 10%;
+    text-align:justify ;
+    line-height: 2.0em;
+}
+
+.mail{
+    color: black;
+}
+.linkUni{
+    color: yellow;
+    background-color: red;
+    border-radius: 5%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.p9{
+    color: green;
+    margin-left: 5%;
+}
+.folio{
+    color: red;
+    margin-left: 5%;
+}
