@@ -1,28 +1,35 @@
 body {
     background-color: rgba(152, 152, 152, 0.538);
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .Cuerpo {
     background-color: white;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    margin-left: 6%;
-    margin-right: 6%;
+   margin-top: 50px;
+   margin-left: 50px;
+   margin-right: 50px;
 }
 
-.imagenUni {
+imagenUni{
+margin-right: 50%;
 
-    clear: both;
 }
 
 img {
     width: 80px;
 }
 
-table {
-
-    width: 100%;
-  
+table, th{
+    padding-right: 100px;
+    margin-top: 35px;
+    margin-left: 70px;
+    margin: 32px;
+    
+    
 }
 
 table,
@@ -50,25 +57,19 @@ h2 {
 }
 
 .sangria {
-    margin-left: 5%;
+    margin-left: 45px;
 }
 
-.Tabla {
-    width: 100%;
-    display: flex;
-    overflow-x: auto;
-    flex-direction: column;
-    padding: 30px;
-
+.tabla{
+width: 93%;
 }
+
 
 th {
     background-color: yellow;
 }
 
-.float {
-    float: right;
-}
+
 
 table tr:nth-child(even) {
     background-color: rgba(255, 68, 0, 0.13);
@@ -80,11 +81,11 @@ table tr:nth-child(odd) {
 }
 
 .espacio{
-    margin-bottom: 110px;
+    padding-top: 115px;
 }
 
 .p8{
-    margin-left: 10%;
+    margin-left: 5%;
     text-align:justify ;
     line-height: 2.0em;
 }
@@ -96,9 +97,10 @@ table tr:nth-child(odd) {
     color: yellow;
     background-color: red;
     border-radius: 5%;
-    padding-top: 1%;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
 }
 
 .p9{
@@ -108,4 +110,14 @@ table tr:nth-child(odd) {
 .folio{
     color: red;
     margin-left: 5%;
+}
+.centro{
+    text-align: center;
+
+}
+.espaciofinal{
+    margin-top: 50px;
+}
+th table{
+    text-align: center;
 }
