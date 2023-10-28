@@ -15,12 +15,14 @@ body {
 }
 
 imagenUni{
-margin-right: 50%;
+    padding-left: 70px;
+
 
 }
 
 img {
     width: 80px;
+
 }
 
 table, th{
