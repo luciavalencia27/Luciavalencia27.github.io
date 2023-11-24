@@ -99,7 +99,7 @@ section#sec1 {
 
 section#pic {
     grid-area: pic;
-    border: 1px black;
+
 }
 
 section#sec2 {
