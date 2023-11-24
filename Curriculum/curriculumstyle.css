@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 200, 210, 0.396);
+}
+
+main {
+
+    background-color: pink;
+    padding: 30px 30px 30px 30px;
+    border-radius: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+    align-items: center;
+    display: grid;
+    grid-template-areas:
+        ".     h     ."
+        ".    pic    ."
+        "sec1 sec2 sec3 "
+    ;
+
+    font-size: 1vw;
+
+}
+
+
+.imagen {
+
+    border-radius: 50%;
+
+}
+
+li {
+    font-size: 2vw;
+}
+
+
+h1 {
+    margin-left: 30px;
+
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+p {
+    font-size: 2vw;
+}
+
+a {
+    color: brown;
+}
+
+section img {
+    width: 100%;
+}
+
+
+table {
+
+    background-color: rgba(255, 235, 205, 0.341);
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 5px;
+}
+
+
+table,
+th,
+td {
+
+    border: 1px solid black;
+}
+
+th,
+td {
+
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: blanchedalmond;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+
+
+header {
+    grid-area: h;
+}
+
+section#sec1 {
+    grid-area: sec1;
+}
+
+section#pic {
+    grid-area: pic;
+    border: 1px black;
+}
+
+section#sec2 {
+    grid-area: sec2;
+
+}
+
+section#sec3 {
+   
+    grid-area: sec3;
+   
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media screen and (max-width:400px) {
+    main {
+        background-color: rgb(198, 157, 236);
+        grid-template-areas:
+            "header "
+            "pic"
+            "sec1 "
+            "sec2"
+            "sec3 "
+        ;
+    }
+}

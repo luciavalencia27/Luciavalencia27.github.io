@@ -1,0 +1,122 @@
+body {
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 60px;
+}
+
+.hoja {
+    background-color: aliceblue;
+    padding: 40px;
+}
+
+.titulo {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 52px;
+    text-align: center;
+
+}
+
+.titulosfunciones{
+    font-size: 28px;
+}
+
+ul {
+    font-size: small;
+}
+
+.indice {
+    border: dotted black 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+}
+
+ins {
+    color: blue;
+}
+
+.indice ul {
+    color: blue;
+}
+
+
+.floatderecha {
+    float: right;
+}
+
+.tituloindice {
+    color: black;
+    text-align: center;
+}
+
+.divanidado {
+    margin-left: 50px;
+}
+h2{
+    margin-left: 30px;
+}
+.sangria {
+    margin-left: 30px;
+}
+
+.div1,
+.div2,
+.div3,
+.div4 {
+    clear: both;
+    background-color: rgb(253, 195, 205);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.cuadrorosa {
+    background-color: rgb(253, 195, 205);
+    padding: 20px;
+
+}
+
+img {
+    width: 100%;
+    box-shadow: 20px 20px pink;
+}
+
+
+/* TABLA */
+table {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+
+td {
+    padding: 30px;
+    background-color: aquamarine;
+}
+
+th {
+    background-color: aqua;
+}
+
+td,
+th {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.piepag {
+    font-size: small;
+    float: right;
+}
+li, table{
+    font-size: 20px;
+}

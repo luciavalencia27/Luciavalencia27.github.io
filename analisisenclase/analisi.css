@@ -1,0 +1,66 @@
+.hoja{
+    width: 8.6in;
+    height: 11in;
+    box-shadow: 10px 10px 15px gray ;
+    background-image: url(PracticaAnalisis/fondoSanJose.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.encabezado img{
+    width: 100%;
+}
+
+.impresion{ 
+    clear: both;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+.elementoDerecha{
+    float: right;
+}
+
+.datosPaciente th,
+.datosPaciente td{
+  
+    font-size: 15px;
+    margin:  70px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: small;
+
+
+}
+.datosPaciente{
+    margin-top: 15px;
+}
+table{
+    width: 100%;
+}
+.metodo{
+    float: left;
+    width: 30%;
+}
+.muestra{
+    width: 70%;
+}
+
+.analisis{
+    clear: both ;
+    background-color: gray;
+    padding: 15px;
+
+}

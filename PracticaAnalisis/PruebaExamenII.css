@@ -1,0 +1,125 @@
+body {
+    background-color: rgba(152, 152, 152, 0.538);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.hoja {
+    background-color: white;
+    background-image: url(fondoSanJose.png);
+    width: 8.6in;
+    height: 11in;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background-size: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+img,
+.encabezado {
+    width: 100%;
+}
+
+.impresion {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    float: right;
+
+}
+
+.datos {
+    clear: both;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+table {
+    width: 100%; 
+}
+
+.datos
+th
+td
+{
+     font-size: small;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+}
+
+.analisis {
+    width: 100%;
+    background-color: gray;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+table#01 tr:nth-child(even){
+    background-color: aqua;
+}
+
+.izquierda {
+    margin-left: 15px;
+
+}
+
+.derecha {
+    float: right;
+    margin-right: 15px;
+}
+
+.resultados{
+    width: 100%;
+    margin-top: 5%;
+    font-size: small;
+    vertical-align: middle;
+  
+
+}
+.datos th td {
+    font-size: small;
+    border: 1px solid black;
+}
+
+.datitos{
+border: 0px;
+}
+
+
+.muestra{
+    padding-top: 60px;
+}
+
+.td1{
+    height: 30% ;
+}
+
+  
+.firmaq,
+.firma{
+    margin-top: 20%;
+  margin-left: 75%; 
+  width: 100px; 
+  height: auto; 
+}
+.quimica{
+    clear: both;
+    float: right;
+   text-align: center; 
+
+
+   
+}
+p{
+    margin:0% ;
+}
+img,
+.footer{
+   
+    width: 100%;
+
+}
