@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "sec1 sec2 sec2";
+
+}
+label{
+font-size: 1vw;
+}
+
+section#sec1 {
+    grid-area: sec1;
+    background-color: aqua;
+    margin-left: 150px;
+    text-align: center;
+    
+
+}
+
+
+section#sec2 {
+    grid-area: sec2;
+    background-color: blueviolet;
+    margin-right: 150px;
+   
+}
+
+#articulos{
+    text-align: center;
+}
+
+#img img {
+    width: 30vh;
+}
+
+#img, h1 {
+    text-align: center;
+}
+
+
+
+div#articulos {
+    display: grid;
+    grid-template-areas:
+        "art1 art2"
+        "art3 art4";
+    padding: 5vh;
+
+}
+
+article#art1 {
+    grid-area: art1;
+    
+
+}
+
+article#art2 {
+    grid-area: art2;
+ 
+}
+
+article#art3 {
+    grid-area: art3;
+    margin-top: 3vh;
+}
+
+article#art4 {
+    grid-area: art4;
+    margin-top: 3vh;
+}
+
+input {
+    padding: 2vh;
+}
+
+div#botones {
+    display: grid;
+    grid-template-areas:
+        "art5 art6"
+        "art7 art7"
+    ;
+}
+
+
+#botones {
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+#text{
+    text-align: left;
+}
+
+article#art5 {
+    grid-area: art5;
+   
+}
+
+article#art6 {
+    grid-area: art6;
+
+}
+
+article#art7 {
+    margin-top: 5px;
+    grid-area: art7;
+   
+}
+
+#art5{
+    padding: 1vh;
+}
+#art6{
+    padding: 1vh;
+}
+#art7{
+    padding: 1vh;
+}
+
+footer#f {
+    background-color: red;
+}
+
+#enviar {
+    font-size: 2vh;
+    background-color: plum;
+    color: white;
+    border-radius: 3vh;
+    float: right;
+    margin-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#enviar:hover {
+    background-color: black;
+}
+
+#borrar {
+   
+    font-size: 2vh;
+    background-color: plum;
+    color: white;
+    border-radius: 3vh;
+    margin-left: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#borrar:hover {
+    background-color: black;
+}
+
+
+
+@media screen and (max-width:600px) {
+    main {
+        background-color: blue;
+        display: grid;
+        grid-template-areas: 
+        "sec1"
+        "sec2";
+     
+    
+    }
+    article#art1 {
+        grid-area: art1;
+        
+    
+    }
+    
+    article#art2 {
+        grid-area: art2;
+     margin-top: 3vh;
+    }
+    img{
+        display: none;
+    }
+    div#articulos {
+        display: grid;
+        grid-template-areas:
+            "art1"
+             "art2"
+            "art3" 
+            "art4";
+        padding: 30px;
+    
+    }
+
+    div#botones {
+        display: grid;
+        grid-template-areas:
+            "art5" 
+            "art6"
+            "art7 "
+        ;
+    }
+    section#sec1, section#sec2 {
+        /* Estilos para pantallas más pequeñas */
+        margin: 0; /* Puedes ajustar según sea necesario */
+        font-size: 1.5vw; /* Puedes ajustar según sea necesario */
+    }
+    label{
+        font-size: 3vw;
+        }
+        h1{
+            font-size: 3vw;
+        }
+        h2{
+          font-size: 3vw;
+        }
+        #articulos input{
+            width: 90%;
+            margin: 0 auto;
+        }
+        legend{
+            font-size: 3vw;
+        }
+}

@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(254, 184, 208);
+    font-family:cursive;
+    font-size: 20px;
+}
+.header{
+   text-align: center;
+    background-color: pink;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+}
+
+img{
+    width: 400px;
+}
+.div1{
+    background-color: rgba(239, 116, 136, 0.594);
+    padding: 50px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.div2{
+    background-color: rgba(239, 116, 136, 0.594);
+    padding: 50px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    text-align: center;
+   
+}
+.div3{
+    background-color: rgba(239, 116, 136, 0.594);
+    padding: 50px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.finalrecuerdos{
+text-align: center;
+}

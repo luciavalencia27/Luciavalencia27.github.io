@@ -1,0 +1,73 @@
+body {
+	font-family: Arial, sans-serif;
+    background-color: #EFEFEF;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #32ADF0;
+	color: white;
+	padding: 10px;
+	flex: 100%;
+}
+
+aside {
+	background-color: #ddd;
+	padding: 10px;
+	flex: 20%;
+	margin: 0;
+}
+
+main {
+	flex: 80%;
+	padding: 20px;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ddd;
+	box-shadow: 0px 0px 10px #ccc;
+}
+
+h1, h2 {
+	margin: 0;
+}
+
+h3 {
+	margin-top: 0;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+textarea {
+	width: 100%;
+	height: 200px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+}
+
+input[type="file"] {
+	margin-bottom: 20px;
+}
+
+input[type="submit"] {
+	background-color: #57c3fc;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #32ADF0;
+}

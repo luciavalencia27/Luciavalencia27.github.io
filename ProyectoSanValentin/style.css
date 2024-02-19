@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(254, 184, 208);
+    font-family:cursive;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+    font-size: 20px;
+}
+header{
+    padding:30px;
+    background-color: rgba(239, 116, 136, 0.594);
+    margin: 20px;
+}
+.recuerdos{
+    font-size: 40px;
+    float: left;
+}
+.fotos{
+    font-size: 40px;
+    float: right;
+}
+a:hover{
+    color: red;
+}
+.cartita{
+    background-color:  rgba(239, 116, 136, 0.594) ;
+    font-family: cursive;
+    margin: 40px;
+    text-align: center;
+    padding: 30px;
+    line-height: 30px;
+}
+.gift{
+    text-align: center;
+}
+.fotitogatito{
+    
+    text-align: center;
+}
+.peach{
+    width: 300px;
+}
