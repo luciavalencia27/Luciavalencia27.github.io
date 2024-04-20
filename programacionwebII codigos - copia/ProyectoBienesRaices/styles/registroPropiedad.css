@@ -1,0 +1,43 @@
+li:hover {
+  border-bottom: 2px solid #aec178a2; /* Establece un borde inferior de 2 píxeles de grosor y color negro */
+  padding-bottom: 1px; 
+  color: #aec178a2;
+}
+
+img {
+    width: 3vh;
+}
+
+.salir {
+
+    border-radius: 4px;
+
+    list-style: none;
+    margin-right: 5px;
+    text-align: right;
+}
+
+.logo {
+    width: 15vh;
+}
+
+/*FORMS*/
+
+.ocupado {
+    background-color: #FF5733; /* Rojo */
+  }
+  .desocupado {
+    background-color: #28A745; /* Verde */
+  } 
+  
+  .btn-custom:hover {
+    background-color: #0d0049; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+    color: white; /* Cambia el color del texto al pasar el cursor sobre el botón */
+    border-color: black; /* Cambia el color del borde al pasar el cursor sobre el botón */
+  }
+
+
+
+
+
+

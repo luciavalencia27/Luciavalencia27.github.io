@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles/registroPropiedad.css">
+  <link rel="icon" href="images/fav-icon.png" type="">
+  <link rel="stylesheet" href="styles/registroProp.css">
+  <title>Registro de Propiedad</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"> <!-- Agrega la clase "fixed-top" -->
+      <div class="container-fluid">
+        <img class="logo" src="images/logo_propnet-removebg-preview.png" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="propiedad.html"> <img src="images/casa.png" alt="">
+                Propiedad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="agente.html"> <img src="images/agente.png" alt="">
+                Agente</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="cliente.html"> <img src="images/cliente.png" alt="">
+                Cliente</a>
+            </li>
+          </ul>
+          <div class="salir">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="propiedad.html"> <img src="images/cerrar-sesion.png"
+                  alt=""> Regresar a Anterior</a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
+  <div class="container mt-5 pt-5">
+    <h1>Registro de Propiedad</h1>
+    <form id="propiedadForm">
+      <div class="mb-3">
+          <label for="idPropiedad" class="form-label">ID Propiedad</label>
+          <input type="text" class="form-control" id="idPropiedad" name="idPropiedad">
+          <span id="idPropiedadError" class="error" style="color: red; display: none;"></span>
+      </div>
+      <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre">
+          <span id="nombreError" class="error" style="color: red; display: none;"></span>
+      </div>
+      <div class="mb-3">
+          <label for="direccion" class="form-label">Dirección</label>
+          <input type="text" class="form-control" id="direccion" name="direccion">
+          <span id="direccionError" class="error" style="color: red; display: none;"></span>
+      </div>
+      <div class="mb-3">
+          <label for="tipo" class="form-label">Tipo</label>
+          <input type="text" class="form-control" id="tipo" name="tipo">
+          <span id="tipoError" class="error" style="color: red; display: none;"></span>
+      </div>
+      <div class="mb-3">
+          <label for="tamaño" class="form-label">Tamaño</label>
+          <input type="text" class="form-control" id="tamaño" name="tamaño">
+          <span id="tamañoError" class="error" style="color: red; display: none;"></span>
+      </div>
+      <div class="mb-3">
+          <label for="numHabitantes" class="form-label">Número de Habitantes</label>
+          <input type="number" class="form-control" id="numHabitantes" name="numHabitantes">
+          <span id="numHabitantesError" class="error" style="color: red; display: none;"></span>
+      </div>
+      <div class="mb-3">
+          <label for="numBaños" class="form-label">Número de Baños</label>
+          <input type="number" class="form-control" id="numBaños" name="numBaños">
+          <span id="numBañosError" class="error" style="color: red; display: none;"></span>
+      </div>
+      <div class="mb-3">
+          <label for="estado" class="form-label">Estado</label>
+          <select class="form-select" id="estado" name="estado">
+              <option value="Selecciona el estado">Selecciona el estado</option>
+              <option value="ocupado">Ocupado</option>
+              <option value="desocupado">Desocupado</option>
+          </select>
+          <span id="estadoError" class="error" style="color: red; display: none;"></span>
+      </div>
+      <div class="mb-3">
+          <label for="precio" class="form-label">Precio</label>
+          <input type="number" class="form-control" id="precio" name="precio">
+          <span id="precioError" class="error" style="color: red; display: none;"></span>
+      </div>
+      <div class="mb-3">
+          <label for="archivo" class="form-label">Imágenes</label>
+          <input type="file" class="form-control" id="archivo" name="archivo" multiple>
+          <span id="archivoError" class="error" style="color: red; display: none;"></span>
+      </div>
+      <button style="background-color: #adc178; border: black;" type="submit" class="btn btn-primary">Guardar</button>
+      <button style="background-color: #adc178; border: black;" type="submit" class="btn btn-primary">
+          <a style="text-decoration: none; color: white;" href="propiedad.html">Atrás</a>
+      </button>
+      <div id="successModal" class="modal" style="display: none;">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>El registro se ha realizado con éxito.</p>
+          </div>
+      </div>
+  </form>
+  
+    
+
+  </div>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+  <script>
+document.getElementById("propiedadForm").addEventListener("submit", function (event) {
+    // Detener el envío del formulario para realizar validaciones
+    event.preventDefault();
+
+    // Obtener los valores de los campos del formulario
+    const idPropiedad = document.getElementById("idPropiedad").value.trim();
+    const nombre = document.getElementById("nombre").value.trim();
+    const direccion = document.getElementById("direccion").value.trim();
+    const tipo = document.getElementById("tipo").value.trim();
+    const tamaño = document.getElementById("tamaño").value.trim();
+    const numHabitantes = document.getElementById("numHabitantes").value;
+    const numBaños = document.getElementById("numBaños").value;
+    const estado = document.getElementById("estado").value;
+    const precio = document.getElementById("precio").value;
+    const archivo = document.getElementById("archivo").files.length;
+
+    // Variables para los mensajes de error
+    let hasError = false;
+
+    // Restablecer los mensajes de error
+    document.querySelectorAll(".error").forEach(function(el) {
+        el.textContent = "";
+        el.style.display = "none";
+    });
+
+    // Validar que todos los campos obligatorios estén llenos
+    if (!idPropiedad) {
+        document.getElementById("idPropiedadError").textContent = "ID Propiedad es obligatorio.";
+        document.getElementById("idPropiedadError").style.display = "block";
+        hasError = true;
+    }
+    if (!nombre) {
+        document.getElementById("nombreError").textContent = "Nombre es obligatorio.";
+        document.getElementById("nombreError").style.display = "block";
+        hasError = true;
+    }
+    if (!direccion) {
+        document.getElementById("direccionError").textContent = "Dirección es obligatoria.";
+        document.getElementById("direccionError").style.display = "block";
+        hasError = true;
+    }
+    if (!tipo) {
+        document.getElementById("tipoError").textContent = "Tipo es obligatorio.";
+        document.getElementById("tipoError").style.display = "block";
+        hasError = true;
+    }
+    if (!tamaño) {
+        document.getElementById("tamañoError").textContent = "Tamaño es obligatorio.";
+        document.getElementById("tamañoError").style.display = "block";
+        hasError = true;
+    }
+    if (!numHabitantes) {
+        document.getElementById("numHabitantesError").textContent = "Número de Habitantes es obligatorio.";
+        document.getElementById("numHabitantesError").style.display = "block";
+        hasError = true;
+    }
+    if (!numBaños) {
+        document.getElementById("numBañosError").textContent = "Número de Baños es obligatorio.";
+        document.getElementById("numBañosError").style.display = "block";
+        hasError = true;
+    }
+    if (!estado || estado === "Selecciona el estado") {
+        document.getElementById("estadoError").textContent = "Estado es obligatorio.";
+        document.getElementById("estadoError").style.display = "block";
+        hasError = true;
+    }
+    if (!precio) {
+        document.getElementById("precioError").textContent = "Precio es obligatorio solo numeros.";
+        document.getElementById("precioError").style.display = "block";
+        hasError = true;
+    }
+    if (archivo === 0) {
+        document.getElementById("archivoError").textContent = "Imágenes son obligatorias.";
+        document.getElementById("archivoError").style.display = "block";
+        hasError = true;
+    }
+
+    // Si hay algún error, detener la ejecución del formulario
+    if (hasError) {
+        return;
+    }
+
+    // Mostrar pantalla flotante con el mensaje de éxito
+    mostrarMensajeExito();
+    
+    // Si todo es correcto, envía el formulario
+    this.submit();
+});
+
+function mostrarMensajeExito() {
+    const modal = document.getElementById("successModal");
+    modal.style.display = "block";
+    
+    // Cerrar el modal cuando se haga clic en la 'X'
+    modal.querySelector(".close").onclick = function() {
+        modal.style.display = "none";
+    };
+}
+
+
+
+
+</script>
+</body>
+
+</html>

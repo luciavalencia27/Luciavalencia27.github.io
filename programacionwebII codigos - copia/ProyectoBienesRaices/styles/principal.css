@@ -1,0 +1,125 @@
+li:hover {
+  border-bottom: 2px solid #aec178a2; /* Establece un borde inferior de 2 píxeles de grosor y color negro */
+  padding-bottom: 1px; 
+  color: #aec178a2;
+}
+
+img{
+  width: 3vh;
+}
+.salir{
+
+  border-radius: 4px;
+
+  list-style: none;
+  margin-right: 5px;
+text-align: right;
+}
+.logo{
+  width: 15vh;
+}
+.nosotros{
+  text-align: justify;
+}
+ /*.fondoprincipal{
+  background-image: url('images/casas.webp');
+ background-size: cover; 
+ background-attachment: fixed;
+ background-position: center center;
+ height: 500px;
+}
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-weight: normal;
+  color: #333;
+}
+
+.suggestions,
+.properties,
+.zones {
+  margin: 20px 0;
+}
+
+.suggestion,
+.property,
+.zone,
+.propnet {
+  display: block;
+  margin-bottom: 10px;
+  color: #446688;
+  text-decoration: none;
+}
+
+.suggestion:hover,
+.property:hover,
+.zone:hover,
+.propnet:hover {
+  color: #264e73;
+}
+
+.inmuebles-x,
+.www {
+  display: block;
+  margin: 20px 0;
+  color: #446688;
+  text-decoration: none;
+}
+
+.hr {
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+
+.group {
+  margin: 40px 0;
+}
+
+.copyright {
+  margin: 10px 0;
+  color: #666;
+}
+
+.powered,
+.agea {
+  display: block;
+  color: #999;
+  text-decoration: none;
+}
+
+.powered:hover,
+.agea:hover {
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  .container {
+      padding: 40px;
+  }
+}
+.pie{
+  background-color: #33333323;
+
+  padding: 50px;
+ }
+
+ .carousel-item{
+  width: 500px;
+ }

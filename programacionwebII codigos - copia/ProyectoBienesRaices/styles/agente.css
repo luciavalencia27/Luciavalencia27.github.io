@@ -1,0 +1,70 @@
+li:hover {
+  border-bottom: 2px solid #aec178a2; /* Establece un borde inferior de 2 píxeles de grosor y color negro */
+  padding-bottom: 1px; 
+  color: #aec178a2;
+}
+  
+  img{
+    width: 3vh;
+  }
+  .salir{
+  
+    border-radius: 4px;
+  
+    list-style: none;
+    margin-right: 5px;
+  text-align: right;
+  }
+  .logo{
+    width: 15vh;
+  }
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contenedor {
+    width: 45%;
+    margin: 2.5%;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .contenedor h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .boton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #adc178;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .boton:hover {
+    background-color: #d7e29b;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .contenedor {
+      width: 90%;
+    }
+  }
+
+  .margintop{
+    margin-top: 10%;
+  }

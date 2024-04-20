@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="images/fav-icon.png" type="">
+    <link rel="stylesheet" href="styles/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script>
+     function validarUsuario() {
+    // Obtener los valores de los campos de entrada
+    var usuario = document.getElementById("usuario").value;
+    var contrasena = document.getElementById("contrasena").value;
+
+    // Obtener los elementos de error
+    var usuarioError = document.getElementById("usuarioError");
+    var contrasenaError = document.getElementById("contrasenaError");
+    var credencialesError = document.getElementById("credencialesError");
+    
+    // Inicializar los mensajes de error como no visibles
+    usuarioError.style.display = 'none';
+    contrasenaError.style.display = 'none';
+    credencialesError.style.display = 'none';
+
+    // Verificar si los campos están vacíos
+    var esValido = true;
+
+    if (usuario.trim() === "") {
+        usuarioError.style.display = 'inline';
+        esValido = false;
+    }
+
+    if (contrasena.trim() === "") {
+        contrasenaError.style.display = 'inline';
+        esValido = false;
+    }
+
+    // Si los campos no están vacíos, verifica las credenciales
+    if (esValido) {
+        if (usuario === "administrador" && contrasena === "admin123") {
+            // Redirigir a la página principal si las credenciales son correctas
+            window.location.href = "/ProyectoBienesRaices/Principal.html";
+        } else {
+            // Mostrar mensaje de error si las credenciales no son correctas
+            credencialesError.style.display = 'inline';
+        }
+    }
+}
+
+    </script>
+</head>
+<body>
+    <div class="login-contenedor">
+        <div class="logo">
+            <img src="images/logo_propnet-removebg-preview.png" alt="">
+        </div>
+        <h2>Iniciar Sesión</h2>
+        <form onsubmit="validarUsuario(); return false;">
+            <input type="text" id="usuario" placeholder="Usuario">
+            <span id="usuarioError" style="color: red; display: none;">Introduce un nombre de usuario</span>
+            
+            <input type="password" id="contrasena" placeholder="Contraseña">
+            <span id="contrasenaError" style="color: red; display: none;">Introduce una contraseña</span>
+            
+            <input type="submit" value="Iniciar Sesión">
+            <span id="credencialesError" style="color: red; display: none;">Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.</span>
+        </form>
+        
+        <div class="forget">
+            <a href="#" id="forgotPassword">¿Olvidaste tu contraseña?</a>
+        
+            <div class="modal" id="forgotPasswordModal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Recuperar Contraseña</h2>
+                    <p>Introduce tu dirección de correo electrónico para recuperar tu contraseña.</p>
+                    <form action="#">
+                        <input type="email" placeholder="Correo electrónico" required>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+          
+          <script src="JavaScript/script.js"></script>
+        </div>
+    </div>
+</body>
+</html>

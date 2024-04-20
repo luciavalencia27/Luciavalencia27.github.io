@@ -1,0 +1,32 @@
+li:hover {
+    border-bottom: 2px solid #aec178a2; /* Establece un borde inferior de 2 píxeles de grosor y color negro */
+    padding-bottom: 1px; 
+    color: #aec178a2;
+}
+
+img {
+    width: 3vh;
+}
+
+.salir {
+
+    border-radius: 4px;
+
+    list-style: none;
+    margin-right: 5px;
+    text-align: right;
+}
+
+.logo {
+    width: 15vh;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-color {
+    background-color: #adc178;
+}

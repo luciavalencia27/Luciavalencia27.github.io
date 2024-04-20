@@ -1,0 +1,35 @@
+.bg-verde {
+  color: #28a745;
+  }
+  .bg-rojo {
+    color: #dc3545;
+  }
+  li:hover {
+    border-bottom: 2px solid #aec178a2; /* Establece un borde inferior de 2 píxeles de grosor y color negro */
+    padding-bottom: 1px; 
+    color: #aec178a2;
+}
+.pt-5{
+  margin-top: 30%;
+}
+
+img{
+width: 3vh;
+}
+.salir{
+
+border-radius: 4px;
+
+list-style: none;
+margin-right: 5px;
+text-align: right;
+}
+.logo{
+width: 15vh;
+}
+button:hover{
+background-color: aqua;
+}
+.margin-bottom{
+  margin-bottom: 5%;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="images/fav-icon.png" type="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eliminar Propiedad</title>
+  <link rel="stylesheet" href="styles/eliminarPropiedad.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0,0,0,0.5);
+            }
+            
+            .modal-contenido {
+                background-color: white;
+                margin: 15% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 300px;
+                text-align: center;
+            }
+            </style>
+</head>
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"> <!-- Agrega la clase "fixed-top" -->
+        <div class="container-fluid">
+            <a href="Principal.html">
+                <img class="logo" src="images/logo_propnet-removebg-preview.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="propiedad.html"> <img
+                                src="images/casa.png" alt=""> Propiedad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="agente.html"> <img
+                                src="images/agente.png" alt=""> Agente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="cliente.html"> <img
+                                src="images/cliente.png" alt=""> Cliente</a>
+                    </li>
+                </ul>
+                <div class="salir">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Principal.html"> <img
+                                src="images/cerrar-sesion.png" alt=""> Regresar a Principal</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+<div class="container mt-5">
+  <h2 class="mb-4">Eliminar Propiedad</h2>
+  <form>
+    <div class="form-group">
+      <label for="idPropiedad">ID Propiedad</label>
+      <input type="text" class="form-control" id="idPropiedad" placeholder="Ingrese el ID de la propiedad">
+    </div>
+    <div class="form-group">
+      <label for="direccion">Dirección</label>
+      <input type="text" class="form-control" id="direccion" placeholder="Ingrese la dirección de la propiedad">
+    </div>
+    <button type="submit" class="btn btn-danger">Eliminar Propiedad</button>
+    <button class="back" style="background-color: #adc178; border: black; " type="submit" class="btn btn-primary"><a
+        style="text-decoration: none; color: white;" href="propiedad.html">Volver a página anterior</button>
+    </a>
+    <div id="modalConfirmacion" class="modal">
+        <div class="modal-contenido">
+            <p id="mensajeConfirmacion">¿Está seguro de que desea eliminar la propiedad?</p>
+            <button id="botonSi" class="btn btn-danger">Sí</button>
+            <button id="botonNo" class="btn btn-secondary">No</button>
+        </div>
+    </div>
+
+</form>
+  
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+//     document.addEventListener('DOMContentLoaded', function() {
+//     // Obtener el formulario
+//     const form = document.querySelector('form');
+
+//     // Agregar un evento de submit al formulario
+//     form.addEventListener('submit', function(event) {
+//         // Obtener los valores de los campos del formulario
+//         const idPropiedad = form.querySelector('#idPropiedad').value.trim();
+//         const direccion = form.querySelector('#direccion').value.trim();
+
+//         // Validar si los campos están llenos
+//         if (idPropiedad === '' || direccion === '') {
+//             // Si los campos están vacíos, muestra un mensaje de error
+//             event.preventDefault(); // Detener el envío del formulario
+//             alert('Por favor, complete ambos campos: ID Propiedad y Dirección.');
+//         } else {
+//             // Si los campos están llenos, pedir confirmación antes de eliminar
+//             const confirmacion = confirm('¿Está seguro de que desea eliminar la propiedad con ID ' + idPropiedad + ' y dirección ' + direccion + '?');
+            
+//             // Si el usuario no confirma, detener el envío del formulario
+//             if (!confirmacion) {
+//                 event.preventDefault();
+//             }
+//         }
+//     });
+// });
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtener el formulario
+    const form = document.querySelector('form');
+
+    // Obtener el modal de confirmación y los botones
+    const modalConfirmacion = document.getElementById('modalConfirmacion');
+    const botonSi = document.getElementById('botonSi');
+    const botonNo = document.getElementById('botonNo');
+    
+    // Función para abrir el modal de confirmación
+    function abrirModalConfirmacion(mensaje) {
+        document.getElementById('mensajeConfirmacion').textContent = mensaje;
+        modalConfirmacion.style.display = 'block';
+    }
+
+    // Función para cerrar el modal de confirmación
+    function cerrarModalConfirmacion() {
+        modalConfirmacion.style.display = 'none';
+    }
+
+    // Agregar evento de submit al formulario
+    form.addEventListener('submit', function(event) {
+        // Obtener los valores de los campos del formulario
+        const idPropiedad = form.querySelector('#idPropiedad').value.trim();
+        const direccion = form.querySelector('#direccion').value.trim();
+
+        // Validar si los campos están llenos
+        if (idPropiedad === '' || direccion === '') {
+            // Si los campos están vacíos, muestra un mensaje de error
+            event.preventDefault(); // Detener el envío del formulario
+            alert('Por favor, complete ambos campos: ID Propiedad y Dirección.');
+        } else {
+            // Si los campos están llenos, mostrar modal de confirmación
+            event.preventDefault(); // Detener el envío del formulario
+            abrirModalConfirmacion(`¿Está seguro de que desea eliminar la propiedad con ID ${idPropiedad} y dirección ${direccion}?`);
+            
+            // Evento de clic en el botón Sí
+            botonSi.addEventListener('click', function() {
+                // Eliminar la propiedad o realizar la acción deseada
+                form.submit();
+                cerrarModalConfirmacion();
+            });
+
+            // Evento de clic en el botón No
+            botonNo.addEventListener('click', function() {
+                // Cerrar el modal y cancelar la eliminación
+                cerrarModalConfirmacion();
+            });
+        }
+    });
+});
+
+
+
+</script>
+</body>
+</html>
